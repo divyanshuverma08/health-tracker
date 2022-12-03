@@ -83,10 +83,10 @@ const PatientDashboard = (props) => {
 
   return (
     <div className="full-body col-span-10 h-screen">
-      <div className="body-without-footer max-h-min bg-bgprimary ">
+      <div className="body-without-footer max-h-min bg-[#e0e7ff]">
         <div className=" main ">
           <div className="">
-            <div className="flex  h-12 m-2 bg-bgprimary rounded mt-4  ">
+            <div className="flex h-8 m-2 bg-[#e0e7ff] rounded mt-4">
               <div>
                 <h1 className="text-2xl font-poppins font-bold p-2 ">
                   DashBoard Today
@@ -104,14 +104,14 @@ const PatientDashboard = (props) => {
               </div>
 
               <Link to="/patient/profile">
-                <button className="flex bg-white rounded shadow  px-4  ml-60 h-14 ">
+                <button className="flex bg-white rounded shadow px-4 ml-60 h-14 ">
                   <img
                     src={patient_profile}
                     className="h-14 p-1 rounded-2xl"
                     alt="profile"
                   ></img>
-                  <div className="mt-4 ml-4  font-bold font-poppins">
-                    <h1>{`${patient.name.firstName}  ${patient.name.surName}`}</h1>
+                  <div className="mt-1 ml-1 text-md font-semibold font-poppins">
+                    <h3>{`${patient.name.firstName}  ${patient.name.surName}`}</h3>
                   </div>
                 </button>
               </Link>
@@ -197,12 +197,10 @@ const PatientDashboard = (props) => {
                       props.setPrescriptionID(prescriptions[0]._id);
                     }}
                   >
-                    <div className=" mt-2 flex items-center justify-evenly text-base bg-primary py-1 px-2 rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary w-5/12  ">
+                    <div className="ml-4 py-2 flex items-center justify-evenly text-base bg-primary rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary">
                       <img src={reports} className="h-4" alt="report"></img>
 
-                      <button className=" font-semibold pl-1">
-                        Preview Prescription
-                      </button>
+                      <button className="font-bold ml-2">Preview Prescription</button>
                     </div>
                   </Link>
                 </div>
@@ -225,7 +223,7 @@ const PatientDashboard = (props) => {
             </div>
             <div className="bg-white m-4 rounded-lg ">
               <div className="grid grid-rows-2 p-6 gap-2 shadow">
-                <div className="grid grid-cols-4 font-bold  ">
+                <div className="grid grid-cols-4 font-bold">
                   <div>
                     <h1>Date</h1>
                   </div>
@@ -238,10 +236,6 @@ const PatientDashboard = (props) => {
                   <div>
                     <h1>Prescription</h1>
                   </div>
-                  <hr></hr>
-                  <hr></hr>
-                  <hr></hr>
-                  <hr></hr>
                 </div>
 
                 {prescriptions.length > 1 ? (
@@ -264,7 +258,7 @@ const PatientDashboard = (props) => {
                             props.setPrescriptionID(prescription._id)
                           }
                         >
-                          <div className=" flex  justify-center bg-primary py-1 px-3 rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary w-2/5   ">
+                          <div className="flex justify-center bg-primary py-1 px-3 rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary">
                             <img
                               src={eye}
                               className="h-4 my-auto"
@@ -283,9 +277,6 @@ const PatientDashboard = (props) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mt-16 mb-0">
-        <Footer></Footer>
       </div>
     </div>
   );

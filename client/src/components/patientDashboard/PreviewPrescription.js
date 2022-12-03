@@ -258,7 +258,6 @@ const PreviewPrescription = (props) => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

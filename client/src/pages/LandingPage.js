@@ -6,7 +6,8 @@ import Footer from "../components/landingPage/Footer";
 
 export default function LandingPage(props) {
   return (
-    <div className="h-screen max-h-min flex flex-col">
+    // <div className="h-screen max-h-min flex flex-col">
+    <div className='bg-[#e0e7ff] h-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden'>
       <Navbar></Navbar>
 
       <div className="body lg:flex px-16 w-full lg:h-5/6 ">
@@ -22,9 +23,9 @@ export default function LandingPage(props) {
           ></Login>
         </div>
       </div>
-      <div className="mt-auto relative bottom-0">
+      {/* <div className="mt-auto relative bottom-0">
         <Footer></Footer>
-      </div>
+      </div> */}
     </div>
   );
 }

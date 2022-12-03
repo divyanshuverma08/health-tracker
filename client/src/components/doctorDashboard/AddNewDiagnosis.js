@@ -649,7 +649,6 @@ const AddNewDiagnosis = (props) => {
           </form>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

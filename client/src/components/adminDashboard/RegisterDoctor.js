@@ -576,9 +576,9 @@ export default function Register(props) {
             </div>
           </form>
 
-          <div className="mt-auto relative bottom-0">
+          {/* <div className="mt-auto relative bottom-0">
             <Footer></Footer>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -78,7 +78,7 @@ const PatientHistory = (props) => {
     getpatient();
   }, [dob]);
   return (
-    <div className="col-span-10">
+    <div className="bg-[#e0e7ff] col-span-10">
       <div className=" px-12">
         <div className="h-screen">
           <div className="font-poppins   mainf">
@@ -90,7 +90,7 @@ const PatientHistory = (props) => {
                   alt="profile"
                 ></img>
                 <div className="grid grid-rows-2 ml-4 gap-2  mb-4">
-                  <div className="mt-4 ml-4  font-bold font-poppins">
+                  <div className="mt-1 ml-1 text-md font-semibold font-poppins">
                     <h1 className="ml-2">
                       {`${patient.name.firstName} ${patient.name.surName}`}
                     </h1>
@@ -143,9 +143,9 @@ const PatientHistory = (props) => {
         </div>
       </div>
 
-      <div className="-mt-20 mb-0">
+      {/* <div className="-mt-20 mb-0">
         <Footer></Footer>
-      </div>
+      </div> */}
     </div>
   );
 };

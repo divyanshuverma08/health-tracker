@@ -114,19 +114,20 @@ export default function Register(props) {
     }
   };
   return (
-    <div className="body overflow-hidden">
+    <div className="body w-full">
+    {/* <div className='h-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden'> */}
       <Navbar></Navbar>
-      <div className="bg-secoundry w-full">
-        <div className="">
+      <div className="w-full">
           <div className=" flex justify-center mt-4">
-            <h1 className="  p-2 px-8 rounded font-bold text-5xl">Register</h1>
+            <h1 className="p-2 px-8 rounded font-bold text-3xl">Register</h1>
           </div>
 
           <form
-            className="font-poppins lg:ml-60  lg:px-8 lg:py-4 bg-white shadow-lg rounded max-w-screen-lg mt-8 mb-4 "
+            className=" font-poppins lg:ml-60  lg:px-8 lg:py-4 bg-white shadow-lg rounded max-w-screen-lg mt-8 mb-4"
+            //  className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
             onSubmit={handleRegisterPatient}
           >
-            <div className="flex   mt-2 bg-bgsecondary w-fit  justify-between rounded mx-auto">
+            <div className="flex mt-2 bg-bgsecondary w-fit justify-between rounded mx-auto">
               <button
                 onClick={() => setToggle("Patient")}
                 className={
@@ -158,7 +159,7 @@ export default function Register(props) {
               <h1 className="font-bold flex justify-center mt-6">
                 For register as doctor contact to admin with you all information
               </h1>
-              <div className="border-4 p-4 mx-auto w-1/2 rounded-xl mt-8  ">
+              <div className="border-4 p-4 mx-auto w-1/2 rounded-xl mt-8">
                 <h1>send your all information</h1>
                 <div>
                   <div className=" rounded-xl p-4 mt-4 ">
@@ -171,7 +172,7 @@ export default function Register(props) {
 
             <div className={Toggle === "Patient" ? "" : "hidden"}>
               <div className="lg:grid lg:grid-cols-4 lg:gap-2 mt-4 mr-4 grid grid-cols-4 gap-2">
-                <label className="font-bold lg:text-xl font-poppins px-4 my-4 ">
+                <label className="font-bold lg:text-lg font-poppins px-4 my-4 ">
                   Name
                 </label>
                 <div>
@@ -200,7 +201,7 @@ export default function Register(props) {
                 ></input>
               </div>
               <div className="lg:grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="font-bold lg:text-xl px-4 ">Birthdate</label>
+                <label className="font-bold lg:text-lg px-4 ">Birthdate</label>
                 <input
                   type="date"
                   className=" bg-blue-100 lg:h-10 rounded pl-4 h-8"
@@ -214,7 +215,7 @@ export default function Register(props) {
                 ></input>
               </div>
               <div className="lg:grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="font-bold lg:text-xl px-4 ">
+                <label className="font-bold lg:text-lg px-4 ">
                   Mobile No.{" "}
                 </label>
 
@@ -233,7 +234,7 @@ export default function Register(props) {
               </div>
 
               <div className=" aadhar lg:grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="font-bold lg:text-xl px-4 ">
+                <label className="font-bold lg:text-lg px-4 ">
                   Aadhar Card No.{" "}
                 </label>
                 <div>
@@ -256,7 +257,7 @@ export default function Register(props) {
               </div>
 
               <div className="grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="  lg:text-xl font-bold px-4 ">Email</label>
+                <label className="  lg:text-lg font-bold px-4 ">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -273,7 +274,7 @@ export default function Register(props) {
               </div>
 
               <div className="grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="  lg:text-xl font-bold px-4">
+                <label className="  lg:text-lg font-bold px-4">
                   Blood Group
                 </label>
                 <div className="">
@@ -301,7 +302,7 @@ export default function Register(props) {
               </div>
 
               <div className="grid grid-cols-4 gap-2 mt-4 mr-4 grid-flow-dense ">
-                <label className=" lg:text-xl font-bold px-4 mb-8 col-span-1">
+                <label className=" lg:text-lg font-bold px-4 mb-8 col-span-1">
                   Address
                 </label>
                 <div className="grid grid-cols-2 lg:gap-8 gap-2 col-span-3 ">
@@ -356,7 +357,7 @@ export default function Register(props) {
               </div>
 
               <div className="lg:grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label type="password" className="  lg:text-xl font-bold px-4">
+                <label type="password" className="lg:text-lg font-bold px-4">
                   Password
                 </label>
                 <input
@@ -375,7 +376,7 @@ export default function Register(props) {
               </div>
 
               <div className="lg:grid lg:grid-cols-4 gap-2 mt-4 mr-4 flex">
-                <label type="password" className=" lg:text-xl font-bold px-4">
+                <label type="password" className=" lg:text-lg font-bold px-4">
                   Confirm Password
                 </label>
                 <input
@@ -394,7 +395,7 @@ export default function Register(props) {
 
               <div className="lg:grid lg:grid-cols-10 gap-2 mt-8 mr-4">
                 <div className="col-span-5">
-                  <label className=" lg:text-xl font-bold px-4 grid col-start-1 col-span-3">
+                  <label className=" lg:text-lg font-bold px-4 grid col-start-1 col-span-3">
                     Name of any permanant disease (if any)
                   </label>
                 </div>
@@ -464,13 +465,13 @@ export default function Register(props) {
 
             <div className={Toggle === "Patient" ? "" : "hidden"}>
               <div className="flex justify-center">
-                <h1 className=" p-4 rounded font-bold lg:text-3xl text-xl mt-2">
+                <h1 className=" p-4 rounded font-bold lg:text-2xl text-lg mt-2">
                   Emergency Contact Details
                 </h1>
               </div>
 
               <div className="lg:grid grid-cols-4 gap-2 mt-8 mr-4 flex">
-                <label className="font-bold lg:text-xl px-4 ">Name</label>
+                <label className="font-bold lg:text-lg px-4 ">Name</label>
                 <input
                   className="bg-blue-100 rounded h-10 pl-4"
                   placeholder="first name"
@@ -493,7 +494,7 @@ export default function Register(props) {
                 ></input>
               </div>
               <div className="lg:grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="font-bold lg:text-xl px-4 ">
+                <label className="font-bold lg:text-lg px-4 ">
                   Mobile No.{" "}
                 </label>
 
@@ -512,7 +513,7 @@ export default function Register(props) {
               </div>
 
               <div className="lg:grid grid-cols-4 gap-2 mt-4 mr-4">
-                <label className="  lg:text-xl font-bold px-4">Email</label>
+                <label className="  lg:text-lg font-bold px-4">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -527,7 +528,7 @@ export default function Register(props) {
               </div>
 
               <div className="mt-4">
-                <label className=" rounded p-2 lg:text-xl font-bold px-4">
+                <label className=" rounded p-2 lg:text-lg font-bold px-4">
                   Relation with patient
                 </label>
                 <input
@@ -543,7 +544,7 @@ export default function Register(props) {
               </div>
 
               <div className="grid grid-cols-4 gap-2 mt-4 mr-4 grid-flow-dense ">
-                <label className=" lg:text-xl font-bold px-4 mb-8 col-span-1">
+                <label className=" lg:text-lg font-bold px-4 mb-8 col-span-1">
                   Address
                 </label>
                 <div className="grid grid-cols-2 gap-8 col-span-3 ">
@@ -607,7 +608,7 @@ export default function Register(props) {
                     width={"5%"}
                   />
                 ) : (
-                  <button className="bg-primary rounded p-2 px-8 font-bold text-xl hover:bg-bgsecondary mb-4 ">
+                  <button className="bg-primary rounded p-2 px-8 font-bold text-lg hover:bg-bgsecondary mb-4 ">
                     Submit
                   </button>
                 )}
@@ -615,10 +616,10 @@ export default function Register(props) {
             </div>
           </form>
 
-          <div className="mt-auto relative bottom-0">
+          {/* <div className="mt-auto relative bottom-0">
             <Footer></Footer>
-          </div>
-        </div>
+          </div> */}
+        
       </div>
     </div>
   );

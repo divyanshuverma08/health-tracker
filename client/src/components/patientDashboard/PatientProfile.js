@@ -79,7 +79,7 @@ const PatientProfile = (props) => {
   };
 
   return (
-    <body className="font-poppins col-span-10 h-screen overflow-y-scroll ">
+    <body className="bg-[#e0e7ff] font-poppins col-span-10 h-screen overflow-y-scroll ">
       <div className="grid grid-cols-2 mt-16">
         <div className="p-4 m-8 bg-white shadow-md w-2/3 mx-auto rounded-md  ">
           <div className="flex justify-center">
@@ -93,9 +93,9 @@ const PatientProfile = (props) => {
             <div className="flex ml-8 ">
               <img src={name} className="h-8 w-8  " />
               <div className="flex mt-1">
-                <h2 className="ml-2">{patient.name.firstName}</h2>
-                <h2 className="ml-2">{patient.name.middleName}</h2>
-                <h2 className="ml-2">{patient.name.surName}</h2>
+                <h2 className="ml-2">{patient.name.firstName} {patient.name.middleName} {patient.name.surName}</h2>
+                {/* <h2 className="ml-2">{patient.name.middleName}</h2>
+                <h2 className="ml-2">{patient.name.surName}</h2> */}
               </div>
             </div>
             <div className="flex ml-8 mt-4">

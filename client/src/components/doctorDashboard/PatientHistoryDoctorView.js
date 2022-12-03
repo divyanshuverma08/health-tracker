@@ -176,9 +176,9 @@ const PatientHistoryDoctorView = (props) => {
           </Link>
         </div>
       )}
-      <div className="-mt-20 mb-0">
+      {/* <div className="-mt-20 mb-0">
         <Footer></Footer>
-      </div>
+      </div> */}
     </div>
   );
 };
