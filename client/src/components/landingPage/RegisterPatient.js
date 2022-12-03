@@ -190,17 +190,6 @@ export default function Register(props) {
                 <input
                   className="bg-blue-100 rounded lg:h-10 lg:pl-4 mt-4 lg:text-md text-sm h-8 px-2"
                   required
-                  placeholder="middle name"
-                  value={patient.name.middleName}
-                  onChange={(e) => {
-                    let temppatient = { ...patient };
-                    temppatient.name.middleName = e.target.value;
-                    setPatient(temppatient);
-                  }}
-                ></input>
-                <input
-                  className="bg-blue-100 rounded lg:h-10 lg:pl-4 mt-4 lg:text-md text-sm h-8 px-2"
-                  required
                   placeholder="last name"
                   value={patient.name.surName}
                   onChange={(e) => {
