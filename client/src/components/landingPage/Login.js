@@ -151,8 +151,8 @@ export default function Login(props) {
         <button
           className={
             Toggle === "Patient"
-              ? "py-2 px-8 text-lg font-poppins font-semibold cursor-pointer rounded bg-primary"
-              : "py-2 px-8 text-lg font-poppins font-medium text-primary cursor-pointer rounded"
+              ? "py-1 px-6 text-lg font-poppins font-semibold cursor-pointer rounded bg-primary"
+              : "py-1 px-6 text-lg font-poppins font-medium text-primary cursor-pointer rounded"
           }
           onClick={() => {
             setToggle("Patient");
@@ -175,8 +175,8 @@ export default function Login(props) {
           }}
           className={
             Toggle === "Doctor"
-              ? "py-2 px-8 text-lg font-poppins font-semibold cursor-pointer rounded bg-primary"
-              : "py-2 px-8 text-lg font-poppins font-medium text-primary cursor-pointer rounded"
+              ? "py-1 px-6 text-lg font-poppins font-semibold cursor-pointer rounded bg-primary"
+              : "py-1 px-6 text-lg font-poppins font-medium text-primary cursor-pointer rounded"
           }
         >
           Doctor
@@ -191,8 +191,8 @@ export default function Login(props) {
           }}
           className={
             Toggle === "Admin"
-              ? "py-2 px-8 text-lg font-poppins font-semibold cursor-pointer rounded bg-primary"
-              : "py-2 px-8 text-lg font-poppins font-medium text-primary cursor-pointer rounded"
+              ? "py-1 px-6 text-lg font-poppins font-semibold cursor-pointer rounded bg-primary"
+              : "py-1 px-6 text-lg font-poppins font-medium text-primary cursor-pointer rounded"
           }
         >
           Admin
@@ -201,7 +201,7 @@ export default function Login(props) {
       <img
         src={profile}
         alt="profile pic"
-        className="h-20 my-6 border-2 rounded-full"
+        className="h-14 my-3 border-2 rounded-full"
       />
       <form className="flex flex-col w-full px-8" onSubmit={handleLogin}>
         <label

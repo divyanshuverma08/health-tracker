@@ -1,4 +1,4 @@
-import logo from "../../assets/img/landingPage/logo.png";
+import logo from "../../assets/img/landingPage/medical-logo.png";
 import add_doctor from "../../assets/img/dashboard/add_doctor.png";
 import patient_list from "../../assets/img/dashboard/patient_list.png";
 import doctor_list from "../../assets/img/dashboard/doctor_list.png";

@@ -33,62 +33,13 @@ const About = () => {
                 <div className="p-6  ">
                   <div className="flex justify-center ">
                     <img src={name} className="h-4 w-4 mt-1 " alt="name"></img>
-                    <h1 className="ml-2">Rohit Patil</h1>
-                  </div>
-                  <div className="flex justify-center mt-2">
-                    <img src={email} className="h-4 w-4 mt-1" alt="email"></img>
-                    <h4 className="ml-2">rohitvpatil0810@gmail.com</h4>
+                    <h1 className="ml-2">Divyanshu Verma</h1>
                   </div>
                   <div className="flex justify-center gap-10 mt-6 ">
-                    <a href="https://www.instagram.com/rohitvpatil0810/">
-                      <img
-                        src={admin_insta}
-                        className="h-5 w-5"
-                        alt="insta"
-                      ></img>
-                    </a>
-                    <a href="https://github.com/rohitvpatil0810">
+                    <a href="https://github.com/divyanshuverma08">
                       <img src={admin_git} className="h-5 w-5" alt="git"></img>
                     </a>
-                    <a href="https://www.linkedin.com/in/rohit-patil-35b08b209/">
-                      <img
-                        src={admin_linkedin}
-                        className="h-5 w-5 "
-                        alt="linkedin"
-                      ></img>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="shadow-sm border-2 mt-6 p-4 rounded-md w-9/12 hover:shadow-xl">
-                <div className="flex justify-center">
-                  <img
-                    src={admin_1}
-                    alt="admin_profile"
-                    className="h-40 w-40 rounded-full "
-                  ></img>
-                </div>
-                <div className="p-6  ">
-                  <div className="flex justify-center ">
-                    <img src={name} className="h-4 w-4 mt-1 " alt="name"></img>
-                    <h1 className="ml-2">Jayesh Patil</h1>
-                  </div>
-                  <div className="flex justify-center mt-2 ">
-                    <img src={email} className="h-4 w-4 mt-1" alt="email"></img>
-                    <h4 className="ml-2">jayeshspatil1602@gmail.com</h4>
-                  </div>
-                  <div className="flex justify-center gap-10 mt-6 ">
-                    <a href="https://www.instagram.com/rohitvpatil0810/">
-                      <img
-                        src={admin_insta}
-                        className="h-5 w-5"
-                        alt="insta"
-                      ></img>
-                    </a>
-                    <a href="https://github.com/rohitvpatil0810">
-                      <img src={admin_git} className="h-5 w-5" alt="git"></img>
-                    </a>
-                    <a href="https://www.linkedin.com/in/rohit-patil-35b08b209/">
+                    <a href="https://www.linkedin.com/in/divyanshuverma08">
                       <img
                         src={admin_linkedin}
                         className="h-5 w-5 "
@@ -109,24 +60,40 @@ const About = () => {
                 <div className="p-6  ">
                   <div className="flex justify-center ">
                     <img src={name} className="h-4 w-4 mt-1 " alt="name"></img>
-                    <h1 className="ml-2">Vaishnavi Raut</h1>
-                  </div>
-                  <div className="flex justify-center mt-2">
-                    <img src={email} className="h-4 w-4 mt-1" alt="email"></img>
-                    <h4 className="ml-2">vaishnaviraut@gmail.com</h4>
+                    <h1 className="ml-2">Shubh Gupta</h1>
                   </div>
                   <div className="flex justify-center gap-10 mt-6 ">
-                    <a href="https://www.instagram.com/rohitvpatil0810/">
-                      <img
-                        src={admin_insta}
-                        className="h-5 w-5"
-                        alt="insta"
-                      ></img>
-                    </a>
-                    <a href="https://github.com/rohitvpatil0810">
+                    <a href="https://github.com/shubhgupta9">
                       <img src={admin_git} className="h-5 w-5" alt="git"></img>
                     </a>
-                    <a href="https://www.linkedin.com/in/rohit-patil-35b08b209/">
+                    <a href="https://www.linkedin.com/in/shubh-gupta-8422a51a0">
+                      <img
+                        src={admin_linkedin}
+                        className="h-5 w-5 "
+                        alt="linkedin"
+                      ></img>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="shadow-sm border-2 mt-6 p-4 rounded-md w-9/12 hover:shadow-xl">
+                <div className="flex justify-center">
+                  <img
+                    src={admin_card_profile}
+                    alt="admin_profile"
+                    className="h-40 w-40 rounded-full border-2"
+                  ></img>
+                </div>
+                <div className="p-6  ">
+                  <div className="flex justify-center ">
+                    <img src={name} className="h-4 w-4 mt-1 " alt="name"></img>
+                    <h1 className="ml-2">Pranshu Saluja</h1>
+                  </div>
+                  <div className="flex justify-center gap-10 mt-6 ">
+                    <a href="https://github.com/Pranshu071">
+                      <img src={admin_git} className="h-5 w-5" alt="git"></img>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranshu-saluja-a45978192/">
                       <img
                         src={admin_linkedin}
                         className="h-5 w-5 "
@@ -147,24 +114,13 @@ const About = () => {
                 <div className="p-6 ">
                   <div className="flex justify-center ">
                     <img src={name} className="h-4 w-4 mt-1 " alt="name"></img>
-                    <h1 className="ml-2">Atharva Pawar</h1>
-                  </div>
-                  <div className="flex justify-center mt-2">
-                    <img src={email} className="h-4 w-4 mt-1" alt="email"></img>
-                    <h4 className="ml-2">atharvapawar@gmail.com</h4>
+                    <h1 className="ml-2">Yash Chibber</h1>
                   </div>
                   <div className="flex justify-center gap-10 mt-6 ">
-                    <a href="https://www.instagram.com/rohitvpatil0810/">
-                      <img
-                        src={admin_insta}
-                        className="h-5 w-5"
-                        alt="insta"
-                      ></img>
-                    </a>
-                    <a href="https://github.com/rohitvpatil0810">
+                    <a href="">
                       <img src={admin_git} className="h-5 w-5" alt="git"></img>
                     </a>
-                    <a href="https://www.linkedin.com/in/rohit-patil-35b08b209/">
+                    <a href="">
                       <img
                         src={admin_linkedin}
                         className="h-5 w-5 "

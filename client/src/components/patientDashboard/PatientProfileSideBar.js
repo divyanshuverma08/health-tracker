@@ -1,4 +1,4 @@
-import logo from "../../assets/img/landingPage/logo.png";
+import logo from "../../assets/img/landingPage/medical-logo.png";
 import dashboard from "../../assets/img/dashboard/dashboard.jpeg";
 import reports from "../../assets/img/dashboard/report2_pbl.png";
 import patient_history from "../../assets/img/dashboard/patient_history.jpeg";
@@ -69,24 +69,7 @@ const PatientProfileSideBar = (props) => {
           <div className="p-4">
             <h1 className="font-poppins font-bold text-xl mt-4">Main menu</h1>
             <div className="grid grid-rows-2 gap-4 font-bold font-poppins mt-4">
-              <Link
-                to="/patient/history"
-                onClick={() => setToggle("Patient_history")}
-                className={
-                  Toggle === "Patient_history"
-                    ? "text-gray-900 "
-                    : "text-gray-400"
-                }
-              >
-                <div className="flex p-2">
-                  <img
-                    src={patient_history}
-                    className="w-6"
-                    alt="history"
-                  ></img>
-                  <h1 className="ml-4">Patient History</h1>
-                </div>
-              </Link>
+              
               <Link
                 to="/patient/profile"
                 onClick={() => setToggle("Patient_profile")}
