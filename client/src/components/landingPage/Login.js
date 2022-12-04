@@ -16,7 +16,7 @@ export default function Login(props) {
 
   useEffect(() => {
     const auth = async () => {
-      const res = await fetch("/auth");
+      const res = await fetch("https://health-tracker-4cxy.onrender.com/auth");
       const data = await res.json();
       if (data.msg === "Doctor Login Found") {
         navigate("/doctor/dashboard");
@@ -55,7 +55,7 @@ export default function Login(props) {
           password
         };
     }
-    const res = await fetch("/login/patient", {
+    const res = await fetch("https://health-tracker-4cxy.onrender.com/login/patient", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -83,7 +83,7 @@ export default function Login(props) {
 
   const handleDoctorAdminLogin = async (email, password, path) => {
     setLoading(true);
-    const res = await fetch(path, {
+    const res = await fetch("https://health-tracker-4cxy.onrender.com" + path, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

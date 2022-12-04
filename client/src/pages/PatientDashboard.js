@@ -62,7 +62,7 @@ const PatientDashboard = (props) => {
   };
   useEffect(() => {
     async function getpatient() {
-      const res = await fetch("/getpatient");
+      const res = await fetch("https://health-tracker-4cxy.onrender.com/getpatient");
       const data = await res.json();
       if (data.AuthError) {
         props.settoastCondition({
