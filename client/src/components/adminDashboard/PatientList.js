@@ -8,7 +8,7 @@ const PatientList = (props) => {
 
   useEffect(() => {
     async function fetchPatientList() {
-      const res = await fetch("https://health-tracker-4cxy.onrender.com/patientlist", {
+      const res = await fetch("/patientlist", {
         credentials: "include",
       });
       const data = await res.json();

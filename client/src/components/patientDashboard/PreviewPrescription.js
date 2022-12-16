@@ -75,7 +75,7 @@ const PreviewPrescription = (props) => {
   });
   useEffect(() => {
     async function fetchprescription() {
-      const res = await fetch(`https://health-tracker-4cxy.onrender.com/prescription/${props.prescriptionID}`);
+      const res = await fetch(`/prescription/${props.prescriptionID}`);
       const data = await res.json();
       if (data.AuthError) {
         props.settoastCondition({
@@ -96,7 +96,7 @@ const PreviewPrescription = (props) => {
       }
     }
     async function fetchpatient() {
-      const res = await fetch("https://health-tracker-4cxy.onrender.com/getpatient");
+      const res = await fetch("/getpatient");
       const data = await res.json();
 
       if (data.AuthError) {

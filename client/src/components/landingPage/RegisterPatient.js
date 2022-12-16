@@ -61,7 +61,7 @@ export default function Register(props) {
 
   useEffect(() => {
     const auth = async () => {
-      const res = await fetch("https://health-tracker-4cxy.onrender.com/auth");
+      const res = await fetch("/auth");
       const data = await res.json();
       if (data.msg === "Doctor Login Found") {
         navigate("/doctor/dashboard");
@@ -82,7 +82,7 @@ export default function Register(props) {
     if (patient.password === confirmPassword) {
       setLoading(true);
       e.preventDefault();
-      const res = await fetch("https://health-tracker-4cxy.onrender.com/register/patient", {
+      const res = await fetch("/register/patient", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

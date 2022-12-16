@@ -10,7 +10,7 @@ import dashboard from "../../assets/img/dashboard/dashboard.jpeg";
 const AdminSidebar = (props) => {
   const navigate = useNavigate();
   const logout = async () => {
-    const res = await fetch("https://health-tracker-4cxy.onrender.com/logout");
+    const res = await fetch("/logout");
     props.settoastCondition({
       status: "success",
       message: "Logged out Successfully!!!",

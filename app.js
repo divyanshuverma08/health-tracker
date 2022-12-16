@@ -10,7 +10,6 @@ const adminRoutes = require("./routes/adminRoutes");
 const logoutRoute = require("./routes/logoutRoute");
 const { requireAdminAuth } = require("./middlewares/adminAuthMiddleware");
 const app = express();
-var cors = require('cors')
 
 dotenv.config({ path: "./config.env" });
 
@@ -18,7 +17,6 @@ dotenv.config({ path: "./config.env" });
 app.use(express.static("public"));
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
 
 const dbURI = process.env.DATABASE;
 const port = process.env.PORT || 5000;

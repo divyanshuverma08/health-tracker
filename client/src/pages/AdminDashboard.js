@@ -11,7 +11,7 @@ const AdminDashboard = (props) => {
   const navigate = useNavigate();
   useEffect(() => {
     async function fetchAdmin() {
-      const res = await fetch("https://health-tracker-4cxy.onrender.com/getadmin");
+      const res = await fetch("/getadmin");
       const data = await res.json();
       if (data.AuthError) {
         props.settoastCondition({
